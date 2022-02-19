@@ -8,18 +8,108 @@
 
 /* Begin PBXBuildFile section */
 		9A63C29D27B7D62E001B20E3 /* TimeTableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C29C27B7D62E001B20E3 /* TimeTableApp.swift */; };
-		9A63C29F27B7D62E001B20E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C29E27B7D62E001B20E3 /* ContentView.swift */; };
+		9A63C29F27B7D62E001B20E3 /* TimeTableEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C29E27B7D62E001B20E3 /* TimeTableEditorView.swift */; };
 		9A63C2A127B7D62F001B20E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A63C2A027B7D62F001B20E3 /* Assets.xcassets */; };
 		9A63C2A427B7D62F001B20E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A63C2A327B7D62F001B20E3 /* Preview Assets.xcassets */; };
+		9A63C2AD27B7D6FB001B20E3 /* TimeTableEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2AB27B7D6FB001B20E3 /* TimeTableEditor.swift */; };
+		9A63C2AE27B7D6FB001B20E3 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2AC27B7D6FB001B20E3 /* TimeTable.swift */; };
+		9A63C2B827B7D80D001B20E3 /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2B227B7D80D001B20E3 /* TeacherData.swift */; };
+		9A63C2B927B7D80D001B20E3 /* SemesterDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2B327B7D80D001B20E3 /* SemesterDays.swift */; };
+		9A63C2BA27B7D80D001B20E3 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2B427B7D80D001B20E3 /* Promotion.swift */; };
+		9A63C2BB27B7D80D001B20E3 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2B527B7D80D001B20E3 /* Subject.swift */; };
+		9A63C2BC27B7D80D001B20E3 /* LessonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2B627B7D80D001B20E3 /* LessonData.swift */; };
+		9A63C2BD27B7D80D001B20E3 /* PupilData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2B727B7D80D001B20E3 /* PupilData.swift */; };
+		9A63C2C627B7D82D001B20E3 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2BF27B7D82D001B20E3 /* Lesson.swift */; };
+		9A63C2C727B7D82D001B20E3 /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2C127B7D82D001B20E3 /* Sex.swift */; };
+		9A63C2C827B7D82D001B20E3 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2C227B7D82D001B20E3 /* Slot.swift */; };
+		9A63C2C927B7D82D001B20E3 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2C327B7D82D001B20E3 /* Day.swift */; };
+		9A63C2CA27B7D82D001B20E3 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2C427B7D82D001B20E3 /* Room.swift */; };
+		9A63C2CB27B7D82D001B20E3 /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2C527B7D82D001B20E3 /* Focus.swift */; };
+		9A63C2CD27B7D84C001B20E3 /* DragAndDropUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2CC27B7D84C001B20E3 /* DragAndDropUtilities.swift */; };
+		9A63C2CF27B7D85B001B20E3 /* SNExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2CE27B7D85B001B20E3 /* SNExporter.swift */; };
+		9A63C2F427B7D86A001B20E3 /* ReserveLessonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2D227B7D86A001B20E3 /* ReserveLessonGrid.swift */; };
+		9A63C2F527B7D86A001B20E3 /* InstrumentalReserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2D327B7D86A001B20E3 /* InstrumentalReserve.swift */; };
+		9A63C2F627B7D86A001B20E3 /* InstrumentalLessonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2D427B7D86A001B20E3 /* InstrumentalLessonGroup.swift */; };
+		9A63C2F727B7D86A001B20E3 /* InstrumentalPromotionColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2D527B7D86A001B20E3 /* InstrumentalPromotionColumn.swift */; };
+		9A63C2F827B7D86A001B20E3 /* InstrumentalTeacherColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2D627B7D86A001B20E3 /* InstrumentalTeacherColumn.swift */; };
+		9A63C2F927B7D86A001B20E3 /* PromotionReserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2D727B7D86A001B20E3 /* PromotionReserve.swift */; };
+		9A63C2FA27B7D86A001B20E3 /* MainReserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2D827B7D86A001B20E3 /* MainReserve.swift */; };
+		9A63C2FB27B7D86A001B20E3 /* EditorDrawingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2D927B7D86A001B20E3 /* EditorDrawingConstants.swift */; };
+		9A63C2FC27B7D86A001B20E3 /* MainTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2DB27B7D86A001B20E3 /* MainTimeTable.swift */; };
+		9A63C2FE27B7D86A001B20E3 /* FieldDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2DD27B7D86A001B20E3 /* FieldDropDelegate.swift */; };
+		9A63C2FF27B7D86A001B20E3 /* Afternoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2DE27B7D86A001B20E3 /* Afternoon.swift */; };
+		9A63C30027B7D86A001B20E3 /* FieldDropChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2DF27B7D86A001B20E3 /* FieldDropChecker.swift */; };
+		9A63C30127B7D86A001B20E3 /* Morning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2E027B7D86A001B20E3 /* Morning.swift */; };
+		9A63C30227B7D86A001B20E3 /* DayColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2E127B7D86A001B20E3 /* DayColumn.swift */; };
+		9A63C30327B7D86A001B20E3 /* DayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2E227B7D86A001B20E3 /* DayHeader.swift */; };
+		9A63C30527B7D86A001B20E3 /* SlotRowTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2E427B7D86A001B20E3 /* SlotRowTuple.swift */; };
+		9A63C30627B7D86A001B20E3 /* SlotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2E527B7D86A001B20E3 /* SlotRow.swift */; };
+		9A63C30727B7D86A001B20E3 /* TimeTableField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2E627B7D86A001B20E3 /* TimeTableField.swift */; };
+		9A63C30827B7D86A001B20E3 /* TimeFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2E827B7D86A001B20E3 /* TimeFieldView.swift */; };
+		9A63C30927B7D86A001B20E3 /* AfternoonTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2E927B7D86A001B20E3 /* AfternoonTimes.swift */; };
+		9A63C30A27B7D86A001B20E3 /* TimeColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2EA27B7D86A001B20E3 /* TimeColumn.swift */; };
+		9A63C30B27B7D86A001B20E3 /* TimeFieldTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2EB27B7D86A001B20E3 /* TimeFieldTuple.swift */; };
+		9A63C30C27B7D86A001B20E3 /* MorningTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2EC27B7D86A001B20E3 /* MorningTimes.swift */; };
+		9A63C30D27B7D86A001B20E3 /* ButtonStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2ED27B7D86A001B20E3 /* ButtonStrip.swift */; };
+		9A63C30E27B7D86A001B20E3 /* Labelify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2EF27B7D86A001B20E3 /* Labelify.swift */; };
+		9A63C30F27B7D86A001B20E3 /* Bordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2F027B7D86A001B20E3 /* Bordered.swift */; };
+		9A63C31027B7D86A001B20E3 /* RoomEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2F227B7D86A001B20E3 /* RoomEditor.swift */; };
+		9A63C31127B7D86A001B20E3 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C2F327B7D86A001B20E3 /* LessonView.swift */; };
+		9A63C31327B7D9B3001B20E3 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63C31227B7D9B3001B20E3 /* Meeting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A63C29927B7D62E001B20E3 /* TimeTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A63C29C27B7D62E001B20E3 /* TimeTableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableApp.swift; sourceTree = "<group>"; };
-		9A63C29E27B7D62E001B20E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A63C29E27B7D62E001B20E3 /* TimeTableEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableEditorView.swift; sourceTree = "<group>"; };
 		9A63C2A027B7D62F001B20E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A63C2A327B7D62F001B20E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A63C2A527B7D62F001B20E3 /* TimeTable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeTable.entitlements; sourceTree = "<group>"; };
+		9A63C2AB27B7D6FB001B20E3 /* TimeTableEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableEditor.swift; sourceTree = "<group>"; };
+		9A63C2AC27B7D6FB001B20E3 /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		9A63C2B227B7D80D001B20E3 /* TeacherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherData.swift; sourceTree = "<group>"; };
+		9A63C2B327B7D80D001B20E3 /* SemesterDays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemesterDays.swift; sourceTree = "<group>"; };
+		9A63C2B427B7D80D001B20E3 /* Promotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		9A63C2B527B7D80D001B20E3 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		9A63C2B627B7D80D001B20E3 /* LessonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonData.swift; sourceTree = "<group>"; };
+		9A63C2B727B7D80D001B20E3 /* PupilData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilData.swift; sourceTree = "<group>"; };
+		9A63C2BF27B7D82D001B20E3 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		9A63C2C127B7D82D001B20E3 /* Sex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
+		9A63C2C227B7D82D001B20E3 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		9A63C2C327B7D82D001B20E3 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		9A63C2C427B7D82D001B20E3 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		9A63C2C527B7D82D001B20E3 /* Focus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
+		9A63C2CC27B7D84C001B20E3 /* DragAndDropUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragAndDropUtilities.swift; sourceTree = "<group>"; };
+		9A63C2CE27B7D85B001B20E3 /* SNExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNExporter.swift; sourceTree = "<group>"; };
+		9A63C2D227B7D86A001B20E3 /* ReserveLessonGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveLessonGrid.swift; sourceTree = "<group>"; };
+		9A63C2D327B7D86A001B20E3 /* InstrumentalReserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentalReserve.swift; sourceTree = "<group>"; };
+		9A63C2D427B7D86A001B20E3 /* InstrumentalLessonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentalLessonGroup.swift; sourceTree = "<group>"; };
+		9A63C2D527B7D86A001B20E3 /* InstrumentalPromotionColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentalPromotionColumn.swift; sourceTree = "<group>"; };
+		9A63C2D627B7D86A001B20E3 /* InstrumentalTeacherColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentalTeacherColumn.swift; sourceTree = "<group>"; };
+		9A63C2D727B7D86A001B20E3 /* PromotionReserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionReserve.swift; sourceTree = "<group>"; };
+		9A63C2D827B7D86A001B20E3 /* MainReserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainReserve.swift; sourceTree = "<group>"; };
+		9A63C2D927B7D86A001B20E3 /* EditorDrawingConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorDrawingConstants.swift; sourceTree = "<group>"; };
+		9A63C2DB27B7D86A001B20E3 /* MainTimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTimeTable.swift; sourceTree = "<group>"; };
+		9A63C2DD27B7D86A001B20E3 /* FieldDropDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldDropDelegate.swift; sourceTree = "<group>"; };
+		9A63C2DE27B7D86A001B20E3 /* Afternoon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Afternoon.swift; sourceTree = "<group>"; };
+		9A63C2DF27B7D86A001B20E3 /* FieldDropChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldDropChecker.swift; sourceTree = "<group>"; };
+		9A63C2E027B7D86A001B20E3 /* Morning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Morning.swift; sourceTree = "<group>"; };
+		9A63C2E127B7D86A001B20E3 /* DayColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayColumn.swift; sourceTree = "<group>"; };
+		9A63C2E227B7D86A001B20E3 /* DayHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHeader.swift; sourceTree = "<group>"; };
+		9A63C2E427B7D86A001B20E3 /* SlotRowTuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotRowTuple.swift; sourceTree = "<group>"; };
+		9A63C2E527B7D86A001B20E3 /* SlotRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotRow.swift; sourceTree = "<group>"; };
+		9A63C2E627B7D86A001B20E3 /* TimeTableField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableField.swift; sourceTree = "<group>"; };
+		9A63C2E827B7D86A001B20E3 /* TimeFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeFieldView.swift; sourceTree = "<group>"; };
+		9A63C2E927B7D86A001B20E3 /* AfternoonTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfternoonTimes.swift; sourceTree = "<group>"; };
+		9A63C2EA27B7D86A001B20E3 /* TimeColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeColumn.swift; sourceTree = "<group>"; };
+		9A63C2EB27B7D86A001B20E3 /* TimeFieldTuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeFieldTuple.swift; sourceTree = "<group>"; };
+		9A63C2EC27B7D86A001B20E3 /* MorningTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorningTimes.swift; sourceTree = "<group>"; };
+		9A63C2ED27B7D86A001B20E3 /* ButtonStrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStrip.swift; sourceTree = "<group>"; };
+		9A63C2EF27B7D86A001B20E3 /* Labelify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Labelify.swift; sourceTree = "<group>"; };
+		9A63C2F027B7D86A001B20E3 /* Bordered.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bordered.swift; sourceTree = "<group>"; };
+		9A63C2F227B7D86A001B20E3 /* RoomEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomEditor.swift; sourceTree = "<group>"; };
+		9A63C2F327B7D86A001B20E3 /* LessonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		9A63C31227B7D9B3001B20E3 /* Meeting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +143,17 @@
 			isa = PBXGroup;
 			children = (
 				9A63C29C27B7D62E001B20E3 /* TimeTableApp.swift */,
-				9A63C29E27B7D62E001B20E3 /* ContentView.swift */,
+				9A63C2AC27B7D6FB001B20E3 /* TimeTable.swift */,
+				9A63C2AB27B7D6FB001B20E3 /* TimeTableEditor.swift */,
+				9A63C29E27B7D62E001B20E3 /* TimeTableEditorView.swift */,
+				9A63C2CE27B7D85B001B20E3 /* SNExporter.swift */,
+				9A63C31227B7D9B3001B20E3 /* Meeting.swift */,
+				9A63C2B127B7D80D001B20E3 /* SemesterData */,
+				9A63C2BE27B7D82D001B20E3 /* TimeTableModel */,
+				9A63C2D027B7D86A001B20E3 /* EditorViews */,
 				9A63C2A027B7D62F001B20E3 /* Assets.xcassets */,
 				9A63C2A527B7D62F001B20E3 /* TimeTable.entitlements */,
+				9A63C2CC27B7D84C001B20E3 /* DragAndDropUtilities.swift */,
 				9A63C2A227B7D62F001B20E3 /* Preview Content */,
 			);
 			path = TimeTable;
@@ -67,6 +165,115 @@
 				9A63C2A327B7D62F001B20E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A63C2B127B7D80D001B20E3 /* SemesterData */ = {
+			isa = PBXGroup;
+			children = (
+				9A63C2B227B7D80D001B20E3 /* TeacherData.swift */,
+				9A63C2B427B7D80D001B20E3 /* Promotion.swift */,
+				9A63C2B527B7D80D001B20E3 /* Subject.swift */,
+				9A63C2B627B7D80D001B20E3 /* LessonData.swift */,
+				9A63C2B727B7D80D001B20E3 /* PupilData.swift */,
+				9A63C2B327B7D80D001B20E3 /* SemesterDays.swift */,
+			);
+			path = SemesterData;
+			sourceTree = "<group>";
+		};
+		9A63C2BE27B7D82D001B20E3 /* TimeTableModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A63C2BF27B7D82D001B20E3 /* Lesson.swift */,
+				9A63C2C027B7D82D001B20E3 /* StructuralEnums */,
+			);
+			path = TimeTableModel;
+			sourceTree = "<group>";
+		};
+		9A63C2C027B7D82D001B20E3 /* StructuralEnums */ = {
+			isa = PBXGroup;
+			children = (
+				9A63C2C127B7D82D001B20E3 /* Sex.swift */,
+				9A63C2C227B7D82D001B20E3 /* Slot.swift */,
+				9A63C2C327B7D82D001B20E3 /* Day.swift */,
+				9A63C2C427B7D82D001B20E3 /* Room.swift */,
+				9A63C2C527B7D82D001B20E3 /* Focus.swift */,
+			);
+			path = StructuralEnums;
+			sourceTree = "<group>";
+		};
+		9A63C2D027B7D86A001B20E3 /* EditorViews */ = {
+			isa = PBXGroup;
+			children = (
+				9A63C2D927B7D86A001B20E3 /* EditorDrawingConstants.swift */,
+				9A63C2DA27B7D86A001B20E3 /* TimeTableViews */,
+				9A63C2E727B7D86A001B20E3 /* TimeFields */,
+				9A63C2D127B7D86A001B20E3 /* ReserveViews */,
+				9A63C2ED27B7D86A001B20E3 /* ButtonStrip.swift */,
+				9A63C2EE27B7D86A001B20E3 /* HelperViews */,
+				9A63C2F127B7D86A001B20E3 /* LessonViews */,
+			);
+			path = EditorViews;
+			sourceTree = "<group>";
+		};
+		9A63C2D127B7D86A001B20E3 /* ReserveViews */ = {
+			isa = PBXGroup;
+			children = (
+				9A63C2D227B7D86A001B20E3 /* ReserveLessonGrid.swift */,
+				9A63C2D327B7D86A001B20E3 /* InstrumentalReserve.swift */,
+				9A63C2D427B7D86A001B20E3 /* InstrumentalLessonGroup.swift */,
+				9A63C2D527B7D86A001B20E3 /* InstrumentalPromotionColumn.swift */,
+				9A63C2D627B7D86A001B20E3 /* InstrumentalTeacherColumn.swift */,
+				9A63C2D727B7D86A001B20E3 /* PromotionReserve.swift */,
+				9A63C2D827B7D86A001B20E3 /* MainReserve.swift */,
+			);
+			path = ReserveViews;
+			sourceTree = "<group>";
+		};
+		9A63C2DA27B7D86A001B20E3 /* TimeTableViews */ = {
+			isa = PBXGroup;
+			children = (
+				9A63C2DB27B7D86A001B20E3 /* MainTimeTable.swift */,
+				9A63C2E127B7D86A001B20E3 /* DayColumn.swift */,
+				9A63C2E227B7D86A001B20E3 /* DayHeader.swift */,
+				9A63C2E027B7D86A001B20E3 /* Morning.swift */,
+				9A63C2DE27B7D86A001B20E3 /* Afternoon.swift */,
+				9A63C2E427B7D86A001B20E3 /* SlotRowTuple.swift */,
+				9A63C2E527B7D86A001B20E3 /* SlotRow.swift */,
+				9A63C2E627B7D86A001B20E3 /* TimeTableField.swift */,
+				9A63C2DF27B7D86A001B20E3 /* FieldDropChecker.swift */,
+				9A63C2DD27B7D86A001B20E3 /* FieldDropDelegate.swift */,
+			);
+			path = TimeTableViews;
+			sourceTree = "<group>";
+		};
+		9A63C2E727B7D86A001B20E3 /* TimeFields */ = {
+			isa = PBXGroup;
+			children = (
+				9A63C2E827B7D86A001B20E3 /* TimeFieldView.swift */,
+				9A63C2E927B7D86A001B20E3 /* AfternoonTimes.swift */,
+				9A63C2EA27B7D86A001B20E3 /* TimeColumn.swift */,
+				9A63C2EB27B7D86A001B20E3 /* TimeFieldTuple.swift */,
+				9A63C2EC27B7D86A001B20E3 /* MorningTimes.swift */,
+			);
+			path = TimeFields;
+			sourceTree = "<group>";
+		};
+		9A63C2EE27B7D86A001B20E3 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				9A63C2EF27B7D86A001B20E3 /* Labelify.swift */,
+				9A63C2F027B7D86A001B20E3 /* Bordered.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		9A63C2F127B7D86A001B20E3 /* LessonViews */ = {
+			isa = PBXGroup;
+			children = (
+				9A63C2F227B7D86A001B20E3 /* RoomEditor.swift */,
+				9A63C2F327B7D86A001B20E3 /* LessonView.swift */,
+			);
+			path = LessonViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +346,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A63C29F27B7D62E001B20E3 /* ContentView.swift in Sources */,
+				9A63C31327B7D9B3001B20E3 /* Meeting.swift in Sources */,
+				9A63C30827B7D86A001B20E3 /* TimeFieldView.swift in Sources */,
+				9A63C2C927B7D82D001B20E3 /* Day.swift in Sources */,
+				9A63C2BB27B7D80D001B20E3 /* Subject.swift in Sources */,
+				9A63C30127B7D86A001B20E3 /* Morning.swift in Sources */,
+				9A63C30C27B7D86A001B20E3 /* MorningTimes.swift in Sources */,
+				9A63C2B927B7D80D001B20E3 /* SemesterDays.swift in Sources */,
+				9A63C30927B7D86A001B20E3 /* AfternoonTimes.swift in Sources */,
+				9A63C2FA27B7D86A001B20E3 /* MainReserve.swift in Sources */,
+				9A63C2BA27B7D80D001B20E3 /* Promotion.swift in Sources */,
+				9A63C2FE27B7D86A001B20E3 /* FieldDropDelegate.swift in Sources */,
+				9A63C31127B7D86A001B20E3 /* LessonView.swift in Sources */,
+				9A63C2F927B7D86A001B20E3 /* PromotionReserve.swift in Sources */,
+				9A63C2CD27B7D84C001B20E3 /* DragAndDropUtilities.swift in Sources */,
+				9A63C30A27B7D86A001B20E3 /* TimeColumn.swift in Sources */,
+				9A63C30327B7D86A001B20E3 /* DayHeader.swift in Sources */,
+				9A63C2F727B7D86A001B20E3 /* InstrumentalPromotionColumn.swift in Sources */,
+				9A63C29F27B7D62E001B20E3 /* TimeTableEditorView.swift in Sources */,
+				9A63C30B27B7D86A001B20E3 /* TimeFieldTuple.swift in Sources */,
+				9A63C30027B7D86A001B20E3 /* FieldDropChecker.swift in Sources */,
+				9A63C2FB27B7D86A001B20E3 /* EditorDrawingConstants.swift in Sources */,
+				9A63C2AE27B7D6FB001B20E3 /* TimeTable.swift in Sources */,
+				9A63C30727B7D86A001B20E3 /* TimeTableField.swift in Sources */,
+				9A63C30627B7D86A001B20E3 /* SlotRow.swift in Sources */,
+				9A63C2CB27B7D82D001B20E3 /* Focus.swift in Sources */,
+				9A63C30527B7D86A001B20E3 /* SlotRowTuple.swift in Sources */,
+				9A63C2F827B7D86A001B20E3 /* InstrumentalTeacherColumn.swift in Sources */,
+				9A63C30D27B7D86A001B20E3 /* ButtonStrip.swift in Sources */,
+				9A63C2B827B7D80D001B20E3 /* TeacherData.swift in Sources */,
+				9A63C2AD27B7D6FB001B20E3 /* TimeTableEditor.swift in Sources */,
+				9A63C2BC27B7D80D001B20E3 /* LessonData.swift in Sources */,
+				9A63C2FC27B7D86A001B20E3 /* MainTimeTable.swift in Sources */,
+				9A63C2FF27B7D86A001B20E3 /* Afternoon.swift in Sources */,
+				9A63C2CF27B7D85B001B20E3 /* SNExporter.swift in Sources */,
+				9A63C31027B7D86A001B20E3 /* RoomEditor.swift in Sources */,
+				9A63C30E27B7D86A001B20E3 /* Labelify.swift in Sources */,
+				9A63C2F627B7D86A001B20E3 /* InstrumentalLessonGroup.swift in Sources */,
+				9A63C2C727B7D82D001B20E3 /* Sex.swift in Sources */,
+				9A63C2F427B7D86A001B20E3 /* ReserveLessonGrid.swift in Sources */,
+				9A63C30227B7D86A001B20E3 /* DayColumn.swift in Sources */,
+				9A63C30F27B7D86A001B20E3 /* Bordered.swift in Sources */,
+				9A63C2BD27B7D80D001B20E3 /* PupilData.swift in Sources */,
 				9A63C29D27B7D62E001B20E3 /* TimeTableApp.swift in Sources */,
+				9A63C2C627B7D82D001B20E3 /* Lesson.swift in Sources */,
+				9A63C2C827B7D82D001B20E3 /* Slot.swift in Sources */,
+				9A63C2F527B7D86A001B20E3 /* InstrumentalReserve.swift in Sources */,
+				9A63C2CA27B7D82D001B20E3 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,11 +520,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TimeTable/TimeTable.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeTable/Preview Content\"";
-				DEVELOPMENT_TEAM = 8ZHX2PN4GQ;
+				DEVELOPMENT_TEAM = 96H53W2529;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -282,7 +535,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ch.StuplaUnterstrass.TimeTable;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.stundenplan.unterstrass.TimeTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,11 +548,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TimeTable/TimeTable.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeTable/Preview Content\"";
-				DEVELOPMENT_TEAM = 8ZHX2PN4GQ;
+				DEVELOPMENT_TEAM = 96H53W2529;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,7 +563,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ch.StuplaUnterstrass.TimeTable;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.stundenplan.unterstrass.TimeTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

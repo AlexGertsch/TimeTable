@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct TimeTableApp: App {
+    // @StateObject declares the timeTableEditor as a source of truth
+    @StateObject var editor = TimeTableEditor()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TimeTableEditorView()
+                .environmentObject(editor)
+            // the timeTableEditor is injected to the TimeTableEditorView
+            // itself and all the Views inside it!
         }
     }
 }
